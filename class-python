@@ -1,0 +1,18 @@
+tom=Turtle()
+tom.shape('turtle')
+tom.color('blue')
+class parrallel:
+    def __init__(self,length):
+        self.length = length
+        tom.lt(90)
+    def draw(self):
+        for i in range(3):
+            tom.fd(self.length)
+            tom.bk(self.length)
+            tom.pu()
+            tom.lt(90)
+            tom.fd(20)
+            tom.rt(90)
+            tom.pd()
+a=parrallel(100)
+a.draw()
